@@ -1,0 +1,127 @@
+body {
+    background-color: white;
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    width: 960px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h1 {
+    font-size: 4em;
+    margin-bottom: 0;
+}
+
+h1 + p {
+    font-weight: 300;
+    font-size: 1.2em;
+    margin: 1em 0;
+}
+
+a,
+a:hover,
+a:active,
+a:visited,
+aside {
+    color: #999;
+}
+
+.display {
+    border: 7px solid #ddd;
+    height: 400px;
+    margin: 2em 0;
+    position: relative;
+    overflow: hidden;
+    width: 960px;
+    box-shadow: 0 0 10px 0 #999 inset;
+}
+
+.gh-ribbon {
+    border: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+
+@keyframes pendulum {
+    to { transform: rotate(70deg); }
+}
+
+@keyframes continuous {
+    to { transform: rotate(360deg); }
+}
+
+
+#p1,
+#p2,
+#p3 {
+    border-width: 1px;
+    border-style: solid;
+    width: 24px;
+    border-radius: 12px;
+    position: absolute;
+}
+
+#p1 {
+    border-color: red;
+    height: 300px;
+    background-color: rgba(255, 0, 0, 0.5);
+    left: 468px;
+    top: 25px;
+    transform-origin: center 50px;
+    transform: rotate(-70deg);
+    animation: pendulum 1.5s ease-in-out 0 infinite alternate;
+}
+
+#p2,
+#p3 {
+    animation-name: continuous;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    transform-origin: center center;
+}
+
+#p2 {
+    border-color: green;
+    height: 200px;
+    background-color: rgba(0, 255, 0, 0.5);
+    left: -1px;
+    bottom: -89px;
+    animation-duration: 3s;
+}
+
+#p3 {
+    border-color: blue;
+    height: 90px;
+    background-color: rgba(0, 0, 255, 0.5);
+    left: -1px;
+    top: -34px;
+    animation-duration: 1.5s;
+    animation-direction: reverse;
+}
+
+
+#p1:after,
+#p2:after,
+#p3:after {
+    content: '';
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    left: 3px;
+    border-radius: 100%;
+    background-color: rgba(0, 0, 0, 0.4)
+}
+
+#p1:after {
+    top: 41px;
+}
+
+#p2:after {
+    top: 91px;
+}
+
+#p3:after {
+    top: 36px;
+}
