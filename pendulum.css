@@ -1,5 +1,3 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,600);
-
 body {
     background-color: white;
     font-family: 'Open Sans', sans-serif;
@@ -20,13 +18,6 @@ header p {
     margin: 1em 0;
 }
 
-footer img {
-    border: 0;
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-
 a,
 a:hover,
 a:active,
@@ -43,6 +34,13 @@ section {
     overflow: hidden;
     width: 960px;
     box-shadow: 0 0 10px 0 #999 inset;
+}
+
+#gh-ribbon {
+    border: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 
