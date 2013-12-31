@@ -1,7 +1,6 @@
 # Pendulum
-Multiple weights suspended from different pivots swinging freely.
+Multiple weights, suspended from different pivots, swinging freely.
 
-[Try demo!](http://llinares.github.com/pendulum/)
+[View demo!](http://llinares.github.io/pendulum/)
 
-## Contact
-Experiment by [Leandro Linares](http://leanlinares.me)
+By [Leandro Linares](http://leanlinares.me)
